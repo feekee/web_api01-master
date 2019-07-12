@@ -22,5 +22,5 @@ from django.conf.urls import url
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'generate_file/', views.generate_file),
-    path('^$',views.front_page)
+    url(r'^$', views.front)
 ]
