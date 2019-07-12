@@ -1,0 +1,58 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Figo System</title>
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+<!--
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+-->
+ <link href="{% static 'bootstrap/css/signin.css' %}" rel="stylesheet">
+  </head>
+
+<style>
+  div{text-align:center}
+  body
+{
+	  background-image:url('static/pic/screen.jpg');
+	  background-repeat:no-repeat;
+      background-position:center;
+      background-attachment: fixed;
+      background-size: cover;
+}
+</style>
+  <body>
+     <div class="container">
+               <form class="form-signin">
+                 <h1 class="container-fluid">Hit System</h1>
+                   <h5 class="container-fluid">一个专注运维自动化的平台</h5>
+
+                   <button class="btn btn-lg btn-block">
+                         <a href="http://127.0.0.1:8000/generate_file">5月</a>
+                   </button>
+                   <button class="btn btn-lg btn-block btn-default">
+                         <a href="http://127.0.0.1:8888/index">6月</a>
+                   </button>
+                   <button class="btn btn-lg btn-block btn-default">
+                         <a href="http://127.0.0.1:8888/xunjian">7月</a>
+                   </button>
+                   <button class="btn btn-lg btn-block btn-default">
+                         <a href="http://127.0.0.1:8888/shenji">8月</a>
+                   </button>
+     </div>
+     <div id="menu" style="height:800px;width:100px;float:left;">
+         <b>菜单</b><br>
+         HTML<br>
+         CSS<br>
+         JavaScript</div>
